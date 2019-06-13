@@ -16,6 +16,13 @@ pm2 stop app.js
 ```
 
 ## run it on port 80
+
+### install lib2cap-bin
+```npm
+sudo apt-get install lib2cap-bin
+```
+
+### initialize it
 ```npm
 sudo setcap cap_net_bind_service=+ep `readlink -f \`which node\``
 ```
